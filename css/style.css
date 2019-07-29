@@ -1,7 +1,18 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
-
+.bg-danger {
+	background-color: #f53756 !important;
+}
+.bg-success {
+	background-color: #4cb8b3 !important;
+}
+.bg-warning {
+	background-color: #fef46d !important;
+}
+.bg-secondary {
+	background-color: #752f97 !important;
+}
 .embed-responsive {
 	position: relative;
 	background-image: url(../img/banda.jpg);
@@ -82,4 +93,27 @@ body {
 .sobre-festival .text-dark {
 	color: #f53756 !important;
 	font-weight: 700;
+}
+
+.separador::after {
+	content: '';
+	display: block;
+	height: 120px;
+	width: 300px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 120px;
+	margin: 0 auto;
+}
+.rock::after {
+	background-image: url(../img/guitarra.png);
+}
+.dj::after {
+	background-image: url(../img/dj.png);
+}
+.horario.bg-warning li:nth-child(2n + 2) {
+	background-color: #eae05b !important;
+}
+.horario.bg-success li:nth-child(2n + 2) {
+	background-color: #3ca8a2 !important;
 }
