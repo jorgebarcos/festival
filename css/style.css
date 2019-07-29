@@ -1,3 +1,7 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
 .embed-responsive {
 	position: relative;
 	background-image: url(../img/banda.jpg);
@@ -10,7 +14,71 @@
 		height: auto;
 	}
 }
-.informacion-concierto {
+.embed-responsive:after {
+	content: '';
+	display: block;
 	position: absolute;
 	top: 0;
+	height: 100%;
+	width: 100%;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,8f0222+61,000000+100&0.5+0,0.7+100 */
+	background: -moz-linear-gradient(
+		-45deg,
+		rgba(169, 3, 41, 0.5) 0%,
+		rgba(0, 0, 0, 0.62) 61%,
+		rgba(0, 0, 0, 0.7) 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		-45deg,
+		rgba(169, 3, 41, 0.5) 0%,
+		rgba(0, 0, 0, 0.62) 61%,
+		rgba(0, 0, 0, 0.7) 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		135deg,
+		rgba(169, 3, 41, 0.5) 0%,
+		rgba(0, 0, 0, 0.62) 61%,
+		rgba(0, 0, 0, 0.7) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#80000000',
+			endColorstr='#b3000000',
+			GradientType=1
+		); /* IE6-9 fallback on horizontal gradient */
+}
+.informacion-concierto {
+	position: absolute;
+	top: 20%;
+	z-index: 100;
+}
+
+@media (min-width: 992px) {
+	.informacion-concierto {
+		top: 35%;
+	}
+}
+.informacion-concierto h1 {
+	font-size: 3rem;
+	line-height: 6rem;
+}
+@media (min-width: 992px) {
+	.informacion-concierto {
+		font-size: 4rem;
+		line-height: unset;
+	}
+}
+
+.informacion-concierto h1 span,
+.informacion-concierto p {
+	font-weight: 700;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.informacion-concierto p {
+	font-size: 2rem;
+}
+.informacion-concierto .text-dark {
+	color: #f53756 !important;
+	font-weight: 700;
 }
