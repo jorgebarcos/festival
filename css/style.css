@@ -131,3 +131,14 @@ body {
 .fecha span:first-child::before {
 	display: none;
 }
+/* Boletos */
+.boletos .precio {
+	font-size: 2rem;
+}
+.boletos .active {
+	background-color: #752f97 !important;
+	border-color: #752f97 !important;
+}
+.list-group-item-succeess {
+	background-color: #4cb8b3 !important;
+}
